@@ -8636,11 +8636,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Miel\\OneDrive\\Documenten\\Vakken\\Responsible ICT\\Language1 - kopie\\Dsl\\Dsl.csproj",
+      "projectUniqueName": "C:\\Users\\Miel\\OneDrive\\Documenten\\GitHub\\RICT\\Language1 - kopie\\Dsl\\Dsl.csproj",
       "projectName": "Company.Language1.Dsl",
-      "projectPath": "C:\\Users\\Miel\\OneDrive\\Documenten\\Vakken\\Responsible ICT\\Language1 - kopie\\Dsl\\Dsl.csproj",
+      "projectPath": "C:\\Users\\Miel\\OneDrive\\Documenten\\GitHub\\RICT\\Language1 - kopie\\Dsl\\Dsl.csproj",
       "packagesPath": "C:\\Users\\Miel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Miel\\OneDrive\\Documenten\\Vakken\\Responsible ICT\\Language1 - kopie\\Dsl\\obj\\",
+      "outputPath": "C:\\Users\\Miel\\OneDrive\\Documenten\\GitHub\\RICT\\Language1 - kopie\\Dsl\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [

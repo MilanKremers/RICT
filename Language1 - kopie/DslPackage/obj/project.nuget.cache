@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3d+I2a9EqmKf7DzycjGtuCrOKO/u5hITtfZFNukZ1M55yIxw07pPJqesAyfkn/075ykgZLob0ESc1vZkqPgsfg==",
+  "dgSpecHash": "/R8cSi7TCDVDn1TpXnu88jAoybfL5NV4vy6U+PO0n4WheN1sz/BY3FFuocH5RHHnzM2prqLqSGB1SP0dlxJehQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Miel\\OneDrive\\Documenten\\Vakken\\Responsible ICT\\Language1 - kopie\\DslPackage\\DslPackage.csproj",
+  "projectFilePath": "C:\\Users\\Miel\\OneDrive\\Documenten\\GitHub\\RICT\\Language1 - kopie\\DslPackage\\DslPackage.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Miel\\.nuget\\packages\\envdte\\17.0.32112.339\\envdte.17.0.32112.339.nupkg.sha512",
     "C:\\Users\\Miel\\.nuget\\packages\\envdte100\\17.0.32112.339\\envdte100.17.0.32112.339.nupkg.sha512",

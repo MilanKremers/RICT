@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Miel\\OneDrive\\Documenten\\Vakken\\Responsible ICT\\Language1 - kopie\\DslPackage\\DslPackage.csproj": {}
+    "C:\\Users\\Miel\\OneDrive\\Documenten\\GitHub\\RICT\\Language1 - kopie\\DslPackage\\DslPackage.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Miel\\OneDrive\\Documenten\\Vakken\\Responsible ICT\\Language1 - kopie\\DslPackage\\DslPackage.csproj": {
+    "C:\\Users\\Miel\\OneDrive\\Documenten\\GitHub\\RICT\\Language1 - kopie\\DslPackage\\DslPackage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Miel\\OneDrive\\Documenten\\Vakken\\Responsible ICT\\Language1 - kopie\\DslPackage\\DslPackage.csproj",
+        "projectUniqueName": "C:\\Users\\Miel\\OneDrive\\Documenten\\GitHub\\RICT\\Language1 - kopie\\DslPackage\\DslPackage.csproj",
         "projectName": "Company.Language1.DslPackage",
-        "projectPath": "C:\\Users\\Miel\\OneDrive\\Documenten\\Vakken\\Responsible ICT\\Language1 - kopie\\DslPackage\\DslPackage.csproj",
+        "projectPath": "C:\\Users\\Miel\\OneDrive\\Documenten\\GitHub\\RICT\\Language1 - kopie\\DslPackage\\DslPackage.csproj",
         "packagesPath": "C:\\Users\\Miel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Miel\\OneDrive\\Documenten\\Vakken\\Responsible ICT\\Language1 - kopie\\DslPackage\\obj\\",
+        "outputPath": "C:\\Users\\Miel\\OneDrive\\Documenten\\GitHub\\RICT\\Language1 - kopie\\DslPackage\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
@@ -28,8 +28,8 @@
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\Miel\\OneDrive\\Documenten\\Vakken\\Responsible ICT\\Language1 - kopie\\Dsl\\Dsl.csproj": {
-                "projectPath": "C:\\Users\\Miel\\OneDrive\\Documenten\\Vakken\\Responsible ICT\\Language1 - kopie\\Dsl\\Dsl.csproj"
+              "C:\\Users\\Miel\\OneDrive\\Documenten\\GitHub\\RICT\\Language1 - kopie\\Dsl\\Dsl.csproj": {
+                "projectPath": "C:\\Users\\Miel\\OneDrive\\Documenten\\GitHub\\RICT\\Language1 - kopie\\Dsl\\Dsl.csproj"
               }
             }
           }
@@ -73,14 +73,14 @@
         }
       }
     },
-    "C:\\Users\\Miel\\OneDrive\\Documenten\\Vakken\\Responsible ICT\\Language1 - kopie\\Dsl\\Dsl.csproj": {
+    "C:\\Users\\Miel\\OneDrive\\Documenten\\GitHub\\RICT\\Language1 - kopie\\Dsl\\Dsl.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Miel\\OneDrive\\Documenten\\Vakken\\Responsible ICT\\Language1 - kopie\\Dsl\\Dsl.csproj",
+        "projectUniqueName": "C:\\Users\\Miel\\OneDrive\\Documenten\\GitHub\\RICT\\Language1 - kopie\\Dsl\\Dsl.csproj",
         "projectName": "Company.Language1.Dsl",
-        "projectPath": "C:\\Users\\Miel\\OneDrive\\Documenten\\Vakken\\Responsible ICT\\Language1 - kopie\\Dsl\\Dsl.csproj",
+        "projectPath": "C:\\Users\\Miel\\OneDrive\\Documenten\\GitHub\\RICT\\Language1 - kopie\\Dsl\\Dsl.csproj",
         "packagesPath": "C:\\Users\\Miel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Miel\\OneDrive\\Documenten\\Vakken\\Responsible ICT\\Language1 - kopie\\Dsl\\obj\\",
+        "outputPath": "C:\\Users\\Miel\\OneDrive\\Documenten\\GitHub\\RICT\\Language1 - kopie\\Dsl\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
