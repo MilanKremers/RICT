@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<soSa xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="75401a98-93f3-4d03-812c-dc439c088991" xmlns="http://schemas.microsoft.com/dsltools/Language1">
+  <elements>
+    <structuralLayer Id="15f46c25-e8fc-435e-ac88-237d7cbe80b6" name="StructuralLayer1">
+      <enablingLayer>
+        <structuralLayerHasEnablingLayer Id="30e9bfd0-37e7-4b0c-b217-7f20607679c5">
+          <enablingLayer Id="9d39ab81-3930-49e3-8bc3-0faba1d41ebc">
+            <lyfeCycleLayer>
+              <enablingLayerHasLyfeCycleLayer Id="c078405e-ecf8-4404-b6d6-73498a3a1a8a">
+                <lyfeCycleLayer Id="f9270ec7-010f-4738-b0a4-20dd64e9ecf6">
+                  <systemLayer>
+                    <lyfeCycleLayerHasSystemLayer Id="84c8ded4-296a-4d5e-be24-9e5bd5eb251e">
+                      <systemLayer Id="b0a92318-34f3-4733-af41-538b55517c2d" />
+                    </lyfeCycleLayerHasSystemLayer>
+                  </systemLayer>
+                </lyfeCycleLayer>
+              </enablingLayerHasLyfeCycleLayer>
+            </lyfeCycleLayer>
+          </enablingLayer>
+        </structuralLayerHasEnablingLayer>
+      </enablingLayer>
+    </structuralLayer>
+  </elements>
+</soSa>

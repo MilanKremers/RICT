@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language1Diagram dslVersion="1.0.0.0" Id="d30e0b22-8611-4ab7-86f9-d0a932a576cd" absoluteBounds="0, 0, 11, 8.5" name="Test">
+  <soSaMoniker Id="75401a98-93f3-4d03-812c-dc439c088991" />
+  <nestedChildShapes>
+    <structuralShape Id="5d3c77b4-e1df-4966-9345-f9d11c4fce46" absoluteBounds="0.5, 0.5, 5.875, 4.625">
+      <structuralLayerMoniker name="/75401a98-93f3-4d03-812c-dc439c088991/StructuralLayer1" />
+    </structuralShape>
+    <enablingShape Id="7ed32d8c-9dd6-421b-869c-54d277866ac2" absoluteBounds="1.5, 1.125, 3.25, 3.125">
+      <enablingLayerMoniker Id="9d39ab81-3930-49e3-8bc3-0faba1d41ebc" />
+    </enablingShape>
+    <lifeCycleShape Id="a3f25bdb-01da-408d-9e27-1c3af49d1531" absoluteBounds="2, 1.125, 2.25, 2.25">
+      <lyfeCycleLayerMoniker Id="f9270ec7-010f-4738-b0a4-20dd64e9ecf6" />
+    </lifeCycleShape>
+    <systemShape Id="ff465785-d7f9-4162-b795-676eab663353" absoluteBounds="2.375, 1.375, 1.5, 1">
+      <systemLayerMoniker Id="b0a92318-34f3-4733-af41-538b55517c2d" />
+    </systemShape>
+  </nestedChildShapes>
+</language1Diagram>

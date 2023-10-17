@@ -1,0 +1,32 @@
+﻿<VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>CSharp\1033\Language1</RelativePathOnDisk>
+    <TemplateFileName>CSharp.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <TemplateID>{0372fa41-dffd-451c-b870-29bf5079420b}</TemplateID>
+        <Name Package="{4fc57a9f-9b4b-43d6-97be-dfb236bae7d8}" ID="103" />
+        <Description Package="{4fc57a9f-9b4b-43d6-97be-dfb236bae7d8}" ID="102" />
+        <Icon Package="{4fc57a9f-9b4b-43d6-97be-dfb236bae7d8}" ID="201" />
+        <ProjectType>CSharp</ProjectType>
+        <SortOrder>360</SortOrder>
+        <DefaultName>Language1.Language1</DefaultName>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>VisualBasic\1033\Language1</RelativePathOnDisk>
+    <TemplateFileName>VisualBasic.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <TemplateID>{28da6d2e-b0db-43ef-95c2-b5d5a431b3a9}</TemplateID>
+        <Name Package="{4fc57a9f-9b4b-43d6-97be-dfb236bae7d8}" ID="103" />
+        <Description Package="{4fc57a9f-9b4b-43d6-97be-dfb236bae7d8}" ID="102" />
+        <Icon Package="{4fc57a9f-9b4b-43d6-97be-dfb236bae7d8}" ID="201" />
+        <ProjectType>VisualBasic</ProjectType>
+        <SortOrder>360</SortOrder>
+        <DefaultName>Language1.Language1</DefaultName>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+</VSTemplateManifest>

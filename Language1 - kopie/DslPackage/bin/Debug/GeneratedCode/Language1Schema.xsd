@@ -1,0 +1,482 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema id="Language1Schema" targetNamespace="http://schemas.microsoft.com/dsltools/Language1" elementFormDefault="qualified" xmlns="http://schemas.microsoft.com/dsltools/Language1" xmlns:core="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import id="CoreSchema" namespace="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" />
+  <!-- SoSa -->
+  <xsd:element name="soSa" type="SoSa" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="SoSa">
+    <xsd:annotation>
+      <xsd:documentation>The root in which all other elements are embedded. Appears as a diagram.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Relationship: SoSaHasElements -->
+          <xsd:element name="elements" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instance of SoSaHasElements</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:choice minOccurs="1" maxOccurs="1" >
+                  <xsd:element ref="soSaHasElements">
+                    <xsd:annotation>
+                      <xsd:documentation>[Relationship deriving from SoSaHasElements needs to be serialized in full-form]</xsd:documentation>
+                    </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element ref="structuralLayer" >
+                    <xsd:annotation>
+                      <xsd:documentation>[Target role-player]</xsd:documentation>
+                    </xsd:annotation>
+                  </xsd:element>
+                </xsd:choice>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- dslVersion -->
+        <xsd:attribute name="dslVersion" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Version of the model serialized in this file.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- SoSa Moniker -->
+  <xsd:element name="soSaMoniker" type="SoSaMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="SoSaMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for SoSa instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- StructuralLayer -->
+  <xsd:element name="structuralLayer" type="StructuralLayer" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="StructuralLayer">
+    <xsd:annotation>
+      <xsd:documentation>Elements embedded in the model. Appear as boxes on the diagram.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Relationship: StructuralLayerReferencesTargets -->
+          <xsd:element name="targets" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of StructuralLayerReferencesTargets</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:choice minOccurs="0" maxOccurs="unbounded" >
+                  <xsd:element ref="structuralLayerReferencesTargets">
+                    <xsd:annotation>
+                      <xsd:documentation>[Relationship deriving from StructuralLayerReferencesTargets needs to be serialized in full-form]</xsd:documentation>
+                    </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element ref="structuralLayerMoniker" >
+                    <xsd:annotation>
+                      <xsd:documentation>[Target role-player]</xsd:documentation>
+                    </xsd:annotation>
+                  </xsd:element>
+                </xsd:choice>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: StructuralLayerHasEnablingLayer -->
+          <xsd:element name="enablingLayer" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instance of StructuralLayerHasEnablingLayer</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="structuralLayerHasEnablingLayer" minOccurs="1" maxOccurs="1">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of StructuralLayerHasEnablingLayer needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: Name -->
+        <xsd:attribute name="name" type="xsd:string" use="required" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- StructuralLayer Moniker -->
+  <xsd:element name="structuralLayerMoniker" type="StructuralLayerMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="StructuralLayerMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for StructuralLayer instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="name" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- EnablingLayer -->
+  <xsd:element name="enablingLayer" type="EnablingLayer" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="EnablingLayer">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Relationship: EnablingLayerHasLyfeCycleLayer -->
+          <xsd:element name="lyfeCycleLayer" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instance of EnablingLayerHasLyfeCycleLayer</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="enablingLayerHasLyfeCycleLayer" minOccurs="1" maxOccurs="1">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of EnablingLayerHasLyfeCycleLayer needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- EnablingLayer Moniker -->
+  <xsd:element name="enablingLayerMoniker" type="EnablingLayerMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="EnablingLayerMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for EnablingLayer instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- LyfeCycleLayer -->
+  <xsd:element name="lyfeCycleLayer" type="LyfeCycleLayer" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="LyfeCycleLayer">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Relationship: LyfeCycleLayerHasSystemLayer -->
+          <xsd:element name="systemLayer" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instance of LyfeCycleLayerHasSystemLayer</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="lyfeCycleLayerHasSystemLayer" minOccurs="1" maxOccurs="1">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of LyfeCycleLayerHasSystemLayer needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- LyfeCycleLayer Moniker -->
+  <xsd:element name="lyfeCycleLayerMoniker" type="LyfeCycleLayerMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="LyfeCycleLayerMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for LyfeCycleLayer instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- SystemLayer -->
+  <xsd:element name="systemLayer" type="SystemLayer" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="SystemLayer">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- SystemLayer Moniker -->
+  <xsd:element name="systemLayerMoniker" type="SystemLayerMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="SystemLayerMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for SystemLayer instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- SoSaHasElements -->
+  <xsd:element name="soSaHasElements" abstract="true" type="SoSaHasElements" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="SoSaHasElements" abstract="true" >
+    <xsd:annotation>
+      <xsd:documentation>Embedding relationship between the Model and Elements</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end StructuralLayer -->
+          <xsd:element ref="structuralLayer" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- SoSaHasElements Moniker -->
+  <xsd:element name="soSaHasElementsMoniker" type="SoSaHasElementsMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="SoSaHasElementsMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for SoSaHasElements instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- StructuralLayerReferencesTargets -->
+  <xsd:element name="structuralLayerReferencesTargets" abstract="true" type="StructuralLayerReferencesTargets" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="StructuralLayerReferencesTargets" abstract="true" >
+    <xsd:annotation>
+      <xsd:documentation>Reference relationship between Elements.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end StructuralLayer -->
+          <xsd:element ref="structuralLayerMoniker" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- StructuralLayerReferencesTargets Moniker -->
+  <xsd:element name="structuralLayerReferencesTargetsMoniker" type="StructuralLayerReferencesTargetsMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="StructuralLayerReferencesTargetsMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for StructuralLayerReferencesTargets instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- StructuralLayerHasEnablingLayer -->
+  <xsd:element name="structuralLayerHasEnablingLayer" type="StructuralLayerHasEnablingLayer" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="StructuralLayerHasEnablingLayer">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end EnablingLayer -->
+          <xsd:element ref="enablingLayer" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- StructuralLayerHasEnablingLayer Moniker -->
+  <xsd:element name="structuralLayerHasEnablingLayerMoniker" type="StructuralLayerHasEnablingLayerMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="StructuralLayerHasEnablingLayerMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for StructuralLayerHasEnablingLayer instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- EnablingLayerHasLyfeCycleLayer -->
+  <xsd:element name="enablingLayerHasLyfeCycleLayer" type="EnablingLayerHasLyfeCycleLayer" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="EnablingLayerHasLyfeCycleLayer">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end LyfeCycleLayer -->
+          <xsd:element ref="lyfeCycleLayer" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- EnablingLayerHasLyfeCycleLayer Moniker -->
+  <xsd:element name="enablingLayerHasLyfeCycleLayerMoniker" type="EnablingLayerHasLyfeCycleLayerMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="EnablingLayerHasLyfeCycleLayerMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for EnablingLayerHasLyfeCycleLayer instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- LyfeCycleLayerHasSystemLayer -->
+  <xsd:element name="lyfeCycleLayerHasSystemLayer" type="LyfeCycleLayerHasSystemLayer" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="LyfeCycleLayerHasSystemLayer">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end SystemLayer -->
+          <xsd:element ref="systemLayer" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- LyfeCycleLayerHasSystemLayer Moniker -->
+  <xsd:element name="lyfeCycleLayerHasSystemLayerMoniker" type="LyfeCycleLayerHasSystemLayerMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="LyfeCycleLayerHasSystemLayerMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for LyfeCycleLayerHasSystemLayer instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+</xsd:schema>
+
