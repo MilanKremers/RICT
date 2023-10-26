@@ -1,0 +1,32 @@
+﻿<VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>CSharp\1033\RICT_parentlevel</RelativePathOnDisk>
+    <TemplateFileName>CSharp.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <TemplateID>{a2c8067f-e533-4eac-81ad-82e73fe3ea44}</TemplateID>
+        <Name Package="{aa73b72a-9a13-4ef7-86c6-cf0a921ede8a}" ID="103" />
+        <Description Package="{aa73b72a-9a13-4ef7-86c6-cf0a921ede8a}" ID="102" />
+        <Icon Package="{aa73b72a-9a13-4ef7-86c6-cf0a921ede8a}" ID="201" />
+        <ProjectType>CSharp</ProjectType>
+        <SortOrder>360</SortOrder>
+        <DefaultName>RICT_parentlevel.RICTparentlevel</DefaultName>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>VisualBasic\1033\RICT_parentlevel</RelativePathOnDisk>
+    <TemplateFileName>VisualBasic.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <TemplateID>{ec15be10-3ef3-4238-a4de-ccaff6f98471}</TemplateID>
+        <Name Package="{aa73b72a-9a13-4ef7-86c6-cf0a921ede8a}" ID="103" />
+        <Description Package="{aa73b72a-9a13-4ef7-86c6-cf0a921ede8a}" ID="102" />
+        <Icon Package="{aa73b72a-9a13-4ef7-86c6-cf0a921ede8a}" ID="201" />
+        <ProjectType>VisualBasic</ProjectType>
+        <SortOrder>360</SortOrder>
+        <DefaultName>RICT_parentlevel.RICTparentlevel</DefaultName>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+</VSTemplateManifest>

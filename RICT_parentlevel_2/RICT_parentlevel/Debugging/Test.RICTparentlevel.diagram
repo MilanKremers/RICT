@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rICT_parentlevelDiagram dslVersion="1.0.0.0" Id="8bd20666-c94b-447f-8ff6-3a03ee8eb3b5" absoluteBounds="0, 0, 15, 11.125" name="Test">
+  <soSaMoniker Id="57e62886-2a91-47d2-b6d4-177fc68efd50" />
+  <nestedChildShapes>
+    <systemeticShape Id="9cee27ab-4fec-4659-9d79-ff047fcf7865" absoluteBounds="0.5, 0.5, 14.25, 10.375">
+      <systemeticMoniker name="/57e62886-2a91-47d2-b6d4-177fc68efd50/Systemetic" />
+    </systemeticShape>
+    <enablingShape Id="8458cab4-61c1-4592-aaba-cace86d0aa12" absoluteBounds="1.375, 0.5, 11.5, 8">
+      <enablingMoniker name="/57e62886-2a91-47d2-b6d4-177fc68efd50/Enabling" />
+    </enablingShape>
+    <immediateShape Id="55e9039e-382d-4b92-b1f6-4c29703f21af" absoluteBounds="2.125, 0.625, 8.125, 3.75">
+      <immediateMoniker name="/57e62886-2a91-47d2-b6d4-177fc68efd50/Immediate" />
+    </immediateShape>
+    <solutionShape Id="26cf3d2b-dbf1-4b0e-9095-5e86313eac56" absoluteBounds="5.25, 0.75, 1.125, 1.125">
+      <solutionMoniker Id="84e88f1a-9c98-4358-8b98-af1f999eece6" />
+    </solutionShape>
+    <socialShape Id="5846af81-61fe-4671-8a9c-477a7c7d9e9a" absoluteBounds="2.875, 1.5, 1.25, 0.75">
+      <socialConcernMoniker Id="578cf6f5-f51a-4b3d-8cfc-d3bd3cd6addf" />
+    </socialShape>
+    <socialShape Id="da2e93f2-e8f1-49d9-95a0-6b39f9536dee" absoluteBounds="5.625, 3.375, 1.375, 0.625">
+      <socialConcernMoniker Id="57d3cdd7-894d-46a4-8188-735af3508264" />
+    </socialShape>
+    <technicalShape Id="716c20c3-11f5-4ef1-b50d-7536d8310171" absoluteBounds="5.875, 2.25, 4, 0.625">
+      <technicalConcernMoniker Id="93ed7e0e-6996-4da9-9a3c-1676bb8c83af" />
+    </technicalShape>
+    <negativeSolutionConnector Id="614e14f7-b374-485c-81fe-b6179034e0e4" edgePoints="[(4.125 : 1.875); (5.25 : 1.3125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <negativeSolutionRelationMoniker Id="7c18d181-4c94-4fe3-9bc3-b23d72ffb69d" />
+      <relativeChildShapes />
+      <nodes>
+        <socialShapeMoniker Id="5846af81-61fe-4671-8a9c-477a7c7d9e9a" />
+        <solutionShapeMoniker Id="26cf3d2b-dbf1-4b0e-9095-5e86313eac56" />
+      </nodes>
+    </negativeSolutionConnector>
+    <positiveSolutionConnector Id="ef07810c-b65b-41b9-9a29-27b7af2aa3d6" edgePoints="[(7.875 : 2.25); (5.8125 : 1.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <positiveSolutionRelationMoniker Id="05f69b9b-ad70-4d09-bc78-1aed711cc3bc" />
+      <relativeChildShapes />
+      <nodes>
+        <technicalShapeMoniker Id="716c20c3-11f5-4ef1-b50d-7536d8310171" />
+        <solutionShapeMoniker Id="26cf3d2b-dbf1-4b0e-9095-5e86313eac56" />
+      </nodes>
+    </positiveSolutionConnector>
+    <positiveSolutionConnector Id="d6963dac-16cd-40bd-b5b2-e2029ce67071" edgePoints="[(6.3125 : 3.375); (5.8125 : 1.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <positiveSolutionRelationMoniker Id="04ec7ae6-f276-4844-9c6b-88cc588630f7" />
+      <relativeChildShapes />
+      <nodes>
+        <socialShapeMoniker Id="da2e93f2-e8f1-49d9-95a0-6b39f9536dee" />
+        <solutionShapeMoniker Id="26cf3d2b-dbf1-4b0e-9095-5e86313eac56" />
+      </nodes>
+    </positiveSolutionConnector>
+    <socialShape Id="576c3a90-2eb1-4268-8162-7099f29f3336" absoluteBounds="2.25, 2.5, 2.25, 0.75">
+      <socialConcernMoniker Id="fffd30a4-3753-47d9-a245-d79fd88d71c4" />
+    </socialShape>
+    <positiveSolutionConnector Id="13a1eefb-d432-4f1f-802e-2f4bc95cd74d" edgePoints="[(4.5 : 2.5); (5.18598156003355 : 1.92834869997204 : JumpStart); (5.31401843996645 : 1.82165130002796 : JumpEnd); (5.43003872808361 : 1.724967726597)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <positiveSolutionRelationMoniker Id="f3c0c5ca-1d08-4956-ae77-84b56be8570c" />
+      <relativeChildShapes />
+      <nodes>
+        <socialShapeMoniker Id="576c3a90-2eb1-4268-8162-7099f29f3336" />
+        <solutionShapeMoniker Id="26cf3d2b-dbf1-4b0e-9095-5e86313eac56" />
+      </nodes>
+    </positiveSolutionConnector>
+    <socialShape Id="3ae0f7b0-c09a-4235-b41b-c608df32fe4f" absoluteBounds="4.25, 5.375, 2.25, 0.75">
+      <socialConcernMoniker Id="6c1abb03-ebd1-47e1-91fc-878b1dc652b9" />
+    </socialShape>
+    <negativeSolutionConnector Id="ef6d5956-4d22-481a-9bf0-85cdfac9c492" edgePoints="[(5.375 : 5.375); (5.8125 : 1.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <negativeSolutionRelationMoniker Id="a6e96236-1510-458b-8222-bd3371e934b5" />
+      <relativeChildShapes />
+      <nodes>
+        <socialShapeMoniker Id="3ae0f7b0-c09a-4235-b41b-c608df32fe4f" />
+        <solutionShapeMoniker Id="26cf3d2b-dbf1-4b0e-9095-5e86313eac56" />
+      </nodes>
+    </negativeSolutionConnector>
+    <socialShape Id="e9c547be-0e27-48b6-ada8-9b69d4438d6f" absoluteBounds="1.875, 4.375, 2, 0.625">
+      <socialConcernMoniker Id="1d79b244-4b19-4d7e-8c14-63d43f2af904" />
+    </socialShape>
+    <positiveShape Id="83118846-2d14-431a-b013-635f7cd735d2" edgePoints="[(3.375 : 3.25); (2.875 : 4.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <positiveRelationMoniker Id="c71c637a-51b6-4834-bf4d-fc6ab0b6335e" />
+      <relativeChildShapes />
+      <nodes>
+        <socialShapeMoniker Id="576c3a90-2eb1-4268-8162-7099f29f3336" />
+        <socialShapeMoniker Id="e9c547be-0e27-48b6-ada8-9b69d4438d6f" />
+      </nodes>
+    </positiveShape>
+    <environmentalShape Id="e287a398-a520-4297-a81e-38c2ac6d8f22" absoluteBounds="2.25, 5.375, 1.5, 1">
+      <environmentalConcernMoniker Id="4ce2a3a4-fd11-4bb8-be6c-7d1862a144ff" />
+    </environmentalShape>
+    <socialShape Id="94da2c09-6d32-4011-8cfe-cf8a2c43436b" absoluteBounds="5.875, 6.875, 2.125, 0.75">
+      <socialConcernMoniker Id="3d3ef4b7-90fc-4a0f-bae9-700634e57ba0" />
+    </socialShape>
+    <environmentalShape Id="2630b79d-71e5-470e-b11a-872693ab4412" absoluteBounds="8.375, 6.25, 1.5, 1">
+      <environmentalConcernMoniker Id="1facff15-dce6-49f4-8959-6bdbb770e46a" />
+    </environmentalShape>
+    <socialShape Id="7177ff99-62f3-4d70-bfc6-2572d029d003" absoluteBounds="8.375, 4.625, 1.75, 1">
+      <socialConcernMoniker Id="ff9555aa-668d-4b13-a553-0d5613f47b32" />
+    </socialShape>
+    <technicalShape Id="b8f3c685-9ebb-4f43-8fc9-6b171a178d24" absoluteBounds="10, 3.25, 2, 1">
+      <technicalConcernMoniker Id="c5282799-df31-4dfc-adda-8a64be00c78c" />
+    </technicalShape>
+    <positiveSolutionConnector Id="8b1a88a2-f242-4e5a-b7d5-dd02ea7e3e1f" edgePoints="[(3.75 : 5.375); (5.35239224261098 : 1.63608476724105)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <positiveSolutionRelationMoniker Id="de34a6e0-83e5-48b3-930d-8a53d8a51064" />
+      <relativeChildShapes />
+      <nodes>
+        <environmentalShapeMoniker Id="e287a398-a520-4297-a81e-38c2ac6d8f22" />
+        <solutionShapeMoniker Id="26cf3d2b-dbf1-4b0e-9095-5e86313eac56" />
+      </nodes>
+    </positiveSolutionConnector>
+    <negativeShape Id="de6f760e-524f-4100-aa06-6b8dd7c6fae6" edgePoints="[(2.875 : 5); (3 : 5.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <negativeRelationMoniker Id="4aa89bcd-3293-4a40-ad0f-efa35e6c28ad" />
+      <relativeChildShapes />
+      <nodes>
+        <socialShapeMoniker Id="e9c547be-0e27-48b6-ada8-9b69d4438d6f" />
+        <environmentalShapeMoniker Id="e287a398-a520-4297-a81e-38c2ac6d8f22" />
+      </nodes>
+    </negativeShape>
+    <positiveShape Id="ffc43c46-b631-4796-b9c4-68437f1211e3" edgePoints="[(4.25 : 5.75); (3.75 : 5.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <positiveRelationMoniker Id="031de550-d74c-45b9-af65-984dec8dafc5" />
+      <relativeChildShapes />
+      <nodes>
+        <socialShapeMoniker Id="3ae0f7b0-c09a-4235-b41b-c608df32fe4f" />
+        <environmentalShapeMoniker Id="e287a398-a520-4297-a81e-38c2ac6d8f22" />
+      </nodes>
+    </positiveShape>
+    <negativeShape Id="6c02e109-3d3a-4f95-bfcf-56ae8d08118e" edgePoints="[(3.75 : 6.375); (4.01582067814907 : 6.43754604191743 : JumpStart); (4.17805687287134 : 6.47571926420502 : JumpEnd); (5.875 : 6.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <negativeRelationMoniker Id="50b672b7-a516-4675-a482-986de3ec064f" />
+      <relativeChildShapes />
+      <nodes>
+        <environmentalShapeMoniker Id="e287a398-a520-4297-a81e-38c2ac6d8f22" />
+        <socialShapeMoniker Id="94da2c09-6d32-4011-8cfe-cf8a2c43436b" />
+      </nodes>
+    </negativeShape>
+    <negativeShape Id="7e624a26-739f-4ae4-81b5-bd0c12197f49" edgePoints="[(8.375 : 6.75); (8 : 7.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <negativeRelationMoniker Id="24ccf838-d1b9-4026-8496-86c6dbd12275" />
+      <relativeChildShapes />
+      <nodes>
+        <environmentalShapeMoniker Id="2630b79d-71e5-470e-b11a-872693ab4412" />
+        <socialShapeMoniker Id="94da2c09-6d32-4011-8cfe-cf8a2c43436b" />
+      </nodes>
+    </negativeShape>
+    <positiveShape Id="38c76ce7-8219-49bd-b327-ae229f55ad71" edgePoints="[(6.5 : 6.125); (8.375 : 6.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <positiveRelationMoniker Id="25981fbb-d15b-487f-9fa9-0e47196a0ecb" />
+      <relativeChildShapes />
+      <nodes>
+        <socialShapeMoniker Id="3ae0f7b0-c09a-4235-b41b-c608df32fe4f" />
+        <environmentalShapeMoniker Id="2630b79d-71e5-470e-b11a-872693ab4412" />
+      </nodes>
+    </positiveShape>
+    <positiveShape Id="11a6955b-2471-42f8-896d-28130a4168a3" edgePoints="[(6.5 : 5.75); (8.375 : 5.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <positiveRelationMoniker Id="b261c9e8-c846-43a4-9ddb-d11699fa0430" />
+      <relativeChildShapes />
+      <nodes>
+        <socialShapeMoniker Id="3ae0f7b0-c09a-4235-b41b-c608df32fe4f" />
+        <socialShapeMoniker Id="7177ff99-62f3-4d70-bfc6-2572d029d003" />
+      </nodes>
+    </positiveShape>
+    <positiveShape Id="95c63a1f-32c7-415f-aacc-f7376ad18c21" edgePoints="[(7 : 4); (8.375 : 4.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <positiveRelationMoniker Id="71dacae8-f678-4055-8b8e-bed2c4d692b4" />
+      <relativeChildShapes />
+      <nodes>
+        <socialShapeMoniker Id="da2e93f2-e8f1-49d9-95a0-6b39f9536dee" />
+        <socialShapeMoniker Id="7177ff99-62f3-4d70-bfc6-2572d029d003" />
+      </nodes>
+    </positiveShape>
+    <positiveShape Id="ff52fafa-75bd-4877-af42-9a0833cb3b79" edgePoints="[(9.875 : 2.875); (10 : 3.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <positiveRelationMoniker Id="9bbfbfb2-8a86-4698-859b-6d12aa676c63" />
+      <relativeChildShapes />
+      <nodes>
+        <technicalShapeMoniker Id="716c20c3-11f5-4ef1-b50d-7536d8310171" />
+        <technicalShapeMoniker Id="b8f3c685-9ebb-4f43-8fc9-6b171a178d24" />
+      </nodes>
+    </positiveShape>
+    <economicShape Id="50656c3f-6ddb-4a38-9c5c-27dae0b9b02c" absoluteBounds="2, 7.75, 1.5, 1">
+      <economicConcernMoniker Id="8bcb003a-aa40-4941-a338-04db77d24cbc" />
+    </economicShape>
+    <environmentalShape Id="b6cd5186-1dff-4b3d-96d5-64244c305099" absoluteBounds="5.25, 9.125, 1.5, 1">
+      <environmentalConcernMoniker Id="0e65f03a-7f81-4b60-822d-32f3879b5a71" />
+    </environmentalShape>
+    <socialShape Id="3b827124-2683-4669-bbdb-33d3db8fce78" absoluteBounds="10.875, 8.25, 1.5, 1">
+      <socialConcernMoniker Id="ff5d4788-b4b0-418a-a17f-088dca03aba6" />
+    </socialShape>
+    <economicShape Id="cff757bf-2f98-447b-a70d-fd94019b8e46" absoluteBounds="12.875, 6.125, 1.5, 1">
+      <economicConcernMoniker Id="ffe7c370-a41a-4641-9d64-f53606f9966e" />
+    </economicShape>
+    <positiveShape Id="4a0afd16-98e3-4f3d-9ada-ff1b6729de63" edgePoints="[(4.25 : 6.125); (3.5 : 7.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <positiveRelationMoniker Id="2751e850-f037-4aa4-918a-463f024154a2" />
+      <relativeChildShapes />
+      <nodes>
+        <socialShapeMoniker Id="3ae0f7b0-c09a-4235-b41b-c608df32fe4f" />
+        <economicShapeMoniker Id="50656c3f-6ddb-4a38-9c5c-27dae0b9b02c" />
+      </nodes>
+    </positiveShape>
+    <positiveShape Id="6ed75bbc-5cb6-41a2-a583-87c6d232c434" edgePoints="[(3.5 : 8.75); (5.25 : 9.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <positiveRelationMoniker Id="4d817661-1e35-4fa1-b1ca-2c904bb900c0" />
+      <relativeChildShapes />
+      <nodes>
+        <economicShapeMoniker Id="50656c3f-6ddb-4a38-9c5c-27dae0b9b02c" />
+        <environmentalShapeMoniker Id="b6cd5186-1dff-4b3d-96d5-64244c305099" />
+      </nodes>
+    </positiveShape>
+    <positiveShape Id="3e507245-6f49-4a5f-8b7b-84d8bba6dab9" edgePoints="[(3.75 : 6.375); (3.91842898910995 : 6.68378648003491 : JumpStart); (3.99823767755671 : 6.83010240885398 : JumpEnd); (5.25 : 9.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <positiveRelationMoniker Id="efb0b39c-2c59-4635-958c-659f8f23fe57" />
+      <relativeChildShapes />
+      <nodes>
+        <environmentalShapeMoniker Id="e287a398-a520-4297-a81e-38c2ac6d8f22" />
+        <environmentalShapeMoniker Id="b6cd5186-1dff-4b3d-96d5-64244c305099" />
+      </nodes>
+    </positiveShape>
+    <negativeShape Id="7a1ed1bf-aa40-4d23-a294-a3d60906bf39" edgePoints="[(10.125 : 5.625); (10.875 : 8.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <negativeRelationMoniker Id="9f093583-16a8-4bbe-9019-06b105ae7ac4" />
+      <relativeChildShapes />
+      <nodes>
+        <socialShapeMoniker Id="7177ff99-62f3-4d70-bfc6-2572d029d003" />
+        <socialShapeMoniker Id="3b827124-2683-4669-bbdb-33d3db8fce78" />
+      </nodes>
+    </negativeShape>
+    <positiveShape Id="019cfd20-5483-4c08-bec9-26b7a0292ae0" edgePoints="[(11 : 4.25); (11.625 : 8.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <positiveRelationMoniker Id="81a08127-2d13-4c8b-87d9-a7531fb625fe" />
+      <relativeChildShapes />
+      <nodes>
+        <technicalShapeMoniker Id="b8f3c685-9ebb-4f43-8fc9-6b171a178d24" />
+        <socialShapeMoniker Id="3b827124-2683-4669-bbdb-33d3db8fce78" />
+      </nodes>
+    </positiveShape>
+    <negativeShape Id="c1bf2ac6-3526-4047-90f6-eaad87ac7621" edgePoints="[(12 : 4.25); (12.875 : 6.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <negativeRelationMoniker Id="d96eca9b-a649-4a64-bcf0-d3516812c65f" />
+      <relativeChildShapes />
+      <nodes>
+        <technicalShapeMoniker Id="b8f3c685-9ebb-4f43-8fc9-6b171a178d24" />
+        <economicShapeMoniker Id="cff757bf-2f98-447b-a70d-fd94019b8e46" />
+      </nodes>
+    </negativeShape>
+  </nestedChildShapes>
+</rICT_parentlevelDiagram>

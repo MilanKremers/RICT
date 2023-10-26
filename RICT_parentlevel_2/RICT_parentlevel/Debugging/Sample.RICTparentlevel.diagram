@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rICT_parentlevelDiagram dslVersion="1.0.0.0" Id="7e31ef38-bcc5-4589-9a7e-3007f70258f6" absoluteBounds="0, 0, 11, 8.5" name="Sample">
+  <exampleModelMoniker Id="4d228b4b-9b8c-402f-8048-b7c2240c27d3" />
+  <nestedChildShapes>
+    <exampleShape Id="1c396176-fe37-4417-b40b-e85879d1a060" absoluteBounds="0.5, 1.75, 2, 0.75">
+      <exampleElementMoniker name="/4d228b4b-9b8c-402f-8048-b7c2240c27d3/ExampleElement1" />
+    </exampleShape>
+    <exampleShape Id="c89dd276-098a-4a3c-9d00-f807bf53ef81" absoluteBounds="3, 0.5, 2, 0.75">
+      <exampleElementMoniker name="/4d228b4b-9b8c-402f-8048-b7c2240c27d3/ExampleElement2" />
+    </exampleShape>
+    <exampleConnector Id="f7570b6c-b4b6-44af-958a-40ee6713ff74" edgePoints="[(1.5 : 1.75); (1.5 : 0.875); (3 : 0.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="aa6d8866-4fe4-4dc0-bf27-7332935b38f3">
+      <nodes>
+        <exampleShapeMoniker Id="1c396176-fe37-4417-b40b-e85879d1a060" />
+        <exampleShapeMoniker Id="c89dd276-098a-4a3c-9d00-f807bf53ef81" />
+      </nodes>
+    </exampleConnector>
+  </nestedChildShapes>
+</rICT_parentlevelDiagram>

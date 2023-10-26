@@ -1,0 +1,17 @@
+﻿<!--DSL Tools Language Template-->
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TemplateData>
+		<TemplateID>{a2c8067f-e533-4eac-81ad-82e73fe3ea44}</TemplateID>
+		<Name Package="{aa73b72a-9a13-4ef7-86c6-cf0a921ede8a}" ID="103"/>
+		<Description Package="{aa73b72a-9a13-4ef7-86c6-cf0a921ede8a}" ID="102"/>
+		<Icon Package="{aa73b72a-9a13-4ef7-86c6-cf0a921ede8a}" ID="201" />
+		<ProjectType>CSharp</ProjectType>
+		<SortOrder>360</SortOrder>
+		<DefaultName>RICT_parentlevel.RICTparentlevel</DefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<ProjectItem TargetFileName="$fileinputname$.RICTparentlevel">RICTparentlevel.RICTparentlevel</ProjectItem>
+		<ProjectItem TargetFileName="$fileinputname$.RICTparentlevel.diagram">RICTparentlevel.diagram</ProjectItem>
+	</TemplateContent>
+</VSTemplate>
+

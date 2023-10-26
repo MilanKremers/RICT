@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<soSa xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="57e62886-2a91-47d2-b6d4-177fc68efd50" xmlns="http://schemas.microsoft.com/dsltools/RICT_parentlevel">
+  <elements>
+    <systemetic Id="f5d4e699-21a8-4945-a4c5-010307205439" name="Systemetic">
+      <concerns>
+        <impactLevelsHasConcerns Id="fd14332a-9578-4e5d-800f-eef9db54a24a">
+          <economicConcern Id="8bcb003a-aa40-4941-a338-04db77d24cbc" description="Cars produced">
+            <positiveTargetConcerns>
+              <positiveRelation Id="4d817661-1e35-4fa1-b1ca-2c904bb900c0">
+                <environmentalConcernMoniker Id="0e65f03a-7f81-4b60-822d-32f3879b5a71" />
+              </positiveRelation>
+            </positiveTargetConcerns>
+          </economicConcern>
+        </impactLevelsHasConcerns>
+        <impactLevelsHasConcerns Id="dc665952-07b9-429f-b264-002c0d95c8f3">
+          <environmentalConcern Id="0e65f03a-7f81-4b60-822d-32f3879b5a71" description="GHG emissions" />
+        </impactLevelsHasConcerns>
+        <impactLevelsHasConcerns Id="1f7e9ddd-16e8-4396-9076-4b0f8f0fa4c1">
+          <socialConcern Id="ff5d4788-b4b0-418a-a17f-088dca03aba6" description="Speed of travel" />
+        </impactLevelsHasConcerns>
+        <impactLevelsHasConcerns Id="a488eea7-998e-41ef-9e83-8cb13514dc52">
+          <economicConcern Id="ffe7c370-a41a-4641-9d64-f53606f9966e" description="Cost of travel" />
+        </impactLevelsHasConcerns>
+      </concerns>
+    </systemetic>
+    <enabling Id="7332a420-2fc0-48cc-9a6e-33bcc54538ca" name="Enabling">
+      <concerns>
+        <impactLevelsHasConcerns Id="2bfdb190-6705-4b85-921c-85d37fc751e5">
+          <socialConcern Id="6c1abb03-ebd1-47e1-91fc-878b1dc652b9" description="Possesion of personal cars">
+            <positiveTargetConcerns>
+              <positiveRelation Id="031de550-d74c-45b9-af65-984dec8dafc5">
+                <environmentalConcernMoniker Id="4ce2a3a4-fd11-4bb8-be6c-7d1862a144ff" />
+              </positiveRelation>
+              <positiveRelation Id="25981fbb-d15b-487f-9fa9-0e47196a0ecb">
+                <environmentalConcernMoniker Id="1facff15-dce6-49f4-8959-6bdbb770e46a" />
+              </positiveRelation>
+              <positiveRelation Id="b261c9e8-c846-43a4-9ddb-d11699fa0430">
+                <socialConcernMoniker Id="ff9555aa-668d-4b13-a553-0d5613f47b32" />
+              </positiveRelation>
+              <positiveRelation Id="2751e850-f037-4aa4-918a-463f024154a2">
+                <economicConcernMoniker Id="8bcb003a-aa40-4941-a338-04db77d24cbc" />
+              </positiveRelation>
+            </positiveTargetConcerns>
+            <negativeSolution>
+              <negativeSolutionRelation Id="a6e96236-1510-458b-8222-bd3371e934b5">
+                <solutionMoniker Id="84e88f1a-9c98-4358-8b98-af1f999eece6" />
+              </negativeSolutionRelation>
+            </negativeSolution>
+          </socialConcern>
+        </impactLevelsHasConcerns>
+        <impactLevelsHasConcerns Id="8164353e-d36f-4b14-a70e-a738d0cae47b">
+          <socialConcern Id="1d79b244-4b19-4d7e-8c14-63d43f2af904" description="Use of public transport">
+            <negativeTargetConcerns>
+              <negativeRelation Id="4aa89bcd-3293-4a40-ad0f-efa35e6c28ad">
+                <environmentalConcernMoniker Id="4ce2a3a4-fd11-4bb8-be6c-7d1862a144ff" />
+              </negativeRelation>
+            </negativeTargetConcerns>
+          </socialConcern>
+        </impactLevelsHasConcerns>
+        <impactLevelsHasConcerns Id="2abeb456-04f4-47db-8fa2-489d0ad577fa">
+          <environmentalConcern Id="4ce2a3a4-fd11-4bb8-be6c-7d1862a144ff" description="Cars on road">
+            <positiveTargetConcerns>
+              <positiveRelation Id="efb0b39c-2c59-4635-958c-659f8f23fe57">
+                <environmentalConcernMoniker Id="0e65f03a-7f81-4b60-822d-32f3879b5a71" />
+              </positiveRelation>
+            </positiveTargetConcerns>
+            <negativeTargetConcerns>
+              <negativeRelation Id="50b672b7-a516-4675-a482-986de3ec064f">
+                <socialConcernMoniker Id="3d3ef4b7-90fc-4a0f-bae9-700634e57ba0" />
+              </negativeRelation>
+            </negativeTargetConcerns>
+            <positiveSolution>
+              <positiveSolutionRelation Id="de34a6e0-83e5-48b3-930d-8a53d8a51064">
+                <solutionMoniker Id="84e88f1a-9c98-4358-8b98-af1f999eece6" />
+              </positiveSolutionRelation>
+            </positiveSolution>
+          </environmentalConcern>
+        </impactLevelsHasConcerns>
+        <impactLevelsHasConcerns Id="b208fc61-aed1-4a25-8d37-0b5a0c4948a9">
+          <socialConcern Id="3d3ef4b7-90fc-4a0f-bae9-700634e57ba0" description="Free space for pedestrians" />
+        </impactLevelsHasConcerns>
+        <impactLevelsHasConcerns Id="1b91bba6-7ebc-4ebf-b96f-3fb791398b29">
+          <environmentalConcern Id="1facff15-dce6-49f4-8959-6bdbb770e46a" description="Cars parked">
+            <negativeTargetConcerns>
+              <negativeRelation Id="24ccf838-d1b9-4026-8496-86c6dbd12275">
+                <socialConcernMoniker Id="3d3ef4b7-90fc-4a0f-bae9-700634e57ba0" />
+              </negativeRelation>
+            </negativeTargetConcerns>
+          </environmentalConcern>
+        </impactLevelsHasConcerns>
+        <impactLevelsHasConcerns Id="7abcbd6e-755e-4413-86cf-be219e690b7d">
+          <socialConcern Id="ff9555aa-668d-4b13-a553-0d5613f47b32" description="Impact of ICT failure">
+            <negativeTargetConcerns>
+              <negativeRelation Id="9f093583-16a8-4bbe-9019-06b105ae7ac4">
+                <socialConcernMoniker Id="ff5d4788-b4b0-418a-a17f-088dca03aba6" />
+              </negativeRelation>
+            </negativeTargetConcerns>
+          </socialConcern>
+        </impactLevelsHasConcerns>
+        <impactLevelsHasConcerns Id="ffc9697a-9845-4411-98b8-8c3f4610be40">
+          <technicalConcern Id="c5282799-df31-4dfc-adda-8a64be00c78c" description="Efficiency of transport">
+            <positiveTargetConcerns>
+              <positiveRelation Id="81a08127-2d13-4c8b-87d9-a7531fb625fe">
+                <socialConcernMoniker Id="ff5d4788-b4b0-418a-a17f-088dca03aba6" />
+              </positiveRelation>
+            </positiveTargetConcerns>
+            <negativeTargetConcerns>
+              <negativeRelation Id="d96eca9b-a649-4a64-bcf0-d3516812c65f">
+                <economicConcernMoniker Id="ffe7c370-a41a-4641-9d64-f53606f9966e" />
+              </negativeRelation>
+            </negativeTargetConcerns>
+          </technicalConcern>
+        </impactLevelsHasConcerns>
+      </concerns>
+    </enabling>
+    <immediate Id="9d9039e5-b8c9-40d1-b788-1a47e1bfd439" name="Immediate">
+      <concerns>
+        <impactLevelsHasConcerns Id="17e649c7-bb20-4983-a784-0d911f51c9fa">
+          <socialConcern Id="578cf6f5-f51a-4b3d-8cfc-d3bd3cd6addf" description="Data privacy">
+            <negativeSolution>
+              <negativeSolutionRelation Id="7c18d181-4c94-4fe3-9bc3-b23d72ffb69d">
+                <solutionMoniker Id="84e88f1a-9c98-4358-8b98-af1f999eece6" />
+              </negativeSolutionRelation>
+            </negativeSolution>
+          </socialConcern>
+        </impactLevelsHasConcerns>
+        <impactLevelsHasConcerns Id="eaad3e7d-2d46-4311-b554-6e2104aa4fdc">
+          <socialConcern Id="57d3cdd7-894d-46a4-8188-735af3508264" description="ICT dependency">
+            <positiveTargetConcerns>
+              <positiveRelation Id="71dacae8-f678-4055-8b8e-bed2c4d692b4">
+                <socialConcernMoniker Id="ff9555aa-668d-4b13-a553-0d5613f47b32" />
+              </positiveRelation>
+            </positiveTargetConcerns>
+            <positiveSolution>
+              <positiveSolutionRelation Id="04ec7ae6-f276-4844-9c6b-88cc588630f7">
+                <solutionMoniker Id="84e88f1a-9c98-4358-8b98-af1f999eece6" />
+              </positiveSolutionRelation>
+            </positiveSolution>
+          </socialConcern>
+        </impactLevelsHasConcerns>
+        <impactLevelsHasConcerns Id="26237048-70d9-4626-bccc-2445a77a9e44">
+          <technicalConcern Id="93ed7e0e-6996-4da9-9a3c-1676bb8c83af" description="Matchmaking quality between supply and demand">
+            <positiveTargetConcerns>
+              <positiveRelation Id="9bbfbfb2-8a86-4698-859b-6d12aa676c63">
+                <technicalConcernMoniker Id="c5282799-df31-4dfc-adda-8a64be00c78c" />
+              </positiveRelation>
+            </positiveTargetConcerns>
+            <positiveSolution>
+              <positiveSolutionRelation Id="05f69b9b-ad70-4d09-bc78-1aed711cc3bc">
+                <solutionMoniker Id="84e88f1a-9c98-4358-8b98-af1f999eece6" />
+              </positiveSolutionRelation>
+            </positiveSolution>
+          </technicalConcern>
+        </impactLevelsHasConcerns>
+        <impactLevelsHasConcerns Id="9541c10d-3143-4f75-8fa7-e53ece7c2db0">
+          <socialConcern Id="fffd30a4-3753-47d9-a245-d79fd88d71c4" description="Flexibility of mobility means">
+            <positiveTargetConcerns>
+              <positiveRelation Id="c71c637a-51b6-4834-bf4d-fc6ab0b6335e">
+                <socialConcernMoniker Id="1d79b244-4b19-4d7e-8c14-63d43f2af904" />
+              </positiveRelation>
+            </positiveTargetConcerns>
+            <positiveSolution>
+              <positiveSolutionRelation Id="f3c0c5ca-1d08-4956-ae77-84b56be8570c">
+                <solutionMoniker Id="84e88f1a-9c98-4358-8b98-af1f999eece6" />
+              </positiveSolutionRelation>
+            </positiveSolution>
+          </socialConcern>
+        </impactLevelsHasConcerns>
+      </concerns>
+      <solution>
+        <impactLevelsHasSolution Id="d79e98a7-a6f0-4938-b162-12a2bed87f1e">
+          <solution Id="84e88f1a-9c98-4358-8b98-af1f999eece6" name="MaaS System" />
+        </impactLevelsHasSolution>
+      </solution>
+    </immediate>
+  </elements>
+</soSa>
